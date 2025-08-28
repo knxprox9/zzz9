@@ -12,33 +12,33 @@ const AboutPage = React.lazy(() => import("./pages/AboutPage"));
 
 // Loading Component
 const PageLoader = () => (
-  <div className="min-h-screen flex items-center justify-center" style={{backgroundColor: '#FAF8F5'}}>
-    <div className="text-center">
-      <div className="w-16 h-16 border-4 border-brand-yellow border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-      <p className="text-gray-600 text-lg">جاري التحميل...</p>
-    </div>
-  </div>
+ <div className="min-h-screen flex items-center justify-center" style={{backgroundColor: '#FAF8F5'}}>
+ <div className="text-center">
+ <div className="w-16 h-16 border-4 border-brand-yellow border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+ <p className="text-gray-600 text-lg">جاري التحميل...</p>
+ </div>
+ </div>
 );
 
 function App() {
-  return (
-    <div className="App" dir="rtl">
-      <BrowserRouter>
-        <Suspense fallback={<PageLoader />}> 
-          <main id="main-content" tabIndex="-1">
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/services" element={<ServicesPage />} />
-              <Route path="/features" element={<FeaturesPage />} />
-              <Route path="/pricing" element={<PricingPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/about" element={<AboutPage />} />
-            </Routes>
-          </main>
-        </Suspense>
-      </BrowserRouter>
-    </div>
-  );
+ return (
+ <div className="App" dir="rtl">
+ <BrowserRouter>
+ <Suspense fallback={<PageLoader />}> 
+ <main id="main-content" tabIndex="-1">
+ <Routes>
+ <Route path="/" element={<HomePage />} />
+ <Route path="/services" element={<ServicesPage />} />
+ <Route path="/features" element={<FeaturesPage />} />
+ <Route path="/pricing" element={<PricingPage />} />
+ <Route path="/contact" element={<ContactPage />} />
+ <Route path="/about" element={<AboutPage />} />
+ </Routes>
+ </main>
+ </Suspense>
+ </BrowserRouter>
+ </div>
+ );
 }
 
 export default App;
