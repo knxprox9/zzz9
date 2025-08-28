@@ -254,7 +254,7 @@ const Header = () => {
  {isMenuOpen && (
  /* إظهار القوائم فقط في الشاشات الصغيرة */
  <div
- className="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-50 
+ className="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-50" 
  aria-label="قائمة الجوال بالأيقونات"
  >
  <ul className="flex flex-col items-center gap-3">
