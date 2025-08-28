@@ -199,7 +199,7 @@ const Header = () => {
  <div className="w-11 h-11 rounded-full bg-white/90 ring-1 ring-white/50 shadow-sm overflow-hidden flex items-center justify-center -mr-0.5">
  <img src="/images/logo-ostora.png" alt="شعار الأسطورة أونلاين" className="w-9 h-9 object-contain drop-shadow-[0_1px_2px_rgba(0,0,0,0.15)]" />
  </div>
- <div className="-ml-1 
+ <div className="-ml-1">
  <h1 className="text-xl font-extrabold text-gray-900 font-alarabiya">الأسطورة أونلاين</h1>
  <p className="text-[10px] text-gray-500 font-semibold">لخدمات الدفع الألكتروني</p>
  </div>
