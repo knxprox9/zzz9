@@ -285,7 +285,7 @@ const TrustMetrics = () => {
 
  return (
  <div className="mt-4 w-full" ref={containerRef}>
- <div className="grid grid-cols-4 gap-2 sm:gap-3 
+ <div className="grid grid-cols-4 gap-2 sm:gap-3">
  {items.map((item, idx) => (
  <MetricCard key={item.key || idx} item={item} idx={idx} visible={visible} />
  ))}
