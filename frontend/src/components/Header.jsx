@@ -63,7 +63,7 @@ const TopBar = () => {
  >
  77 999 5884
  </a>
- <Phone className="w-4 h-4 text-gray-600 hidden strokeWidth="2.5" />
+ <Phone className="w-4 h-4 text-gray-600 hidden" strokeWidth="2.5" />
  <span className="text-gray-400 mx-1 font-bold">|</span>
  <a
  href="tel:+967739995884"
