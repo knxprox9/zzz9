@@ -52,7 +52,7 @@ const TopBar = () => {
  <a
  href="tel:+967779995884"
  aria-label="اتصال على +967 77 999 5884"
- className="text-gray-600 hover:text-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 rounded font-semibold cursor-pointer 
+ className="text-gray-600 hover:text-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 rounded font-semibold cursor-pointer"
  dir="ltr"
  style={{ direction: 'ltr', unicodeBidi: 'embed' }}
  onClick={(e) => {
