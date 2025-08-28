@@ -195,7 +195,7 @@ const Header = () => {
  <div className="container mx-auto px-4 py-4">
  <div className="flex items-center justify-between">
  {/* Logo and Brand */}
- <Link to="/" className="flex items-center gap-0 hover:opacity-80 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white rounded">
+ <Link to="/" className="flex items-center gap-0 lg:gap-3 hover:opacity-80 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white rounded">
  <div className="w-11 h-11 rounded-full bg-white/90 ring-1 ring-white/50 shadow-sm overflow-hidden flex items-center justify-center -mr-0.5">
  <img src="/images/logo-ostora.png" alt="شعار الأسطورة أونلاين" className="w-9 h-9 object-contain drop-shadow-[0_1px_2px_rgba(0,0,0,0.15)]" />
  </div>
@@ -206,7 +206,7 @@ const Header = () => {
  </Link>
 
  {/* Desktop Navigation */}
- <nav className="hidden items-center gap-8" aria-label="التنقل الرئيسي">
+ <nav className="hidden lg:flex items-center gap-8" aria-label="التنقل الرئيسي">
  {navLinks.map((link) => (
  <Link
  key={link.path}
@@ -236,7 +236,7 @@ const Header = () => {
  href={DOWNLOAD_URL}
  download="USO.apk"
  aria-label="تحميل التطبيق"
- relative w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-700 shadow-[0_8px_24px_rgba(0,0,0,0.10)] ring-1 ring-black/5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.14)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+ className="lg:hidden relative w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-700 shadow-[0_8px_24px_rgba(0,0,0,0.10)] ring-1 ring-black/5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.14)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
  >
  <Download className="w-5 h-5" />
  </a>
@@ -246,7 +246,7 @@ const Header = () => {
  onClick={() => setIsMenuOpen(!isMenuOpen)}
  aria-expanded={isMenuOpen}
  aria-label={isMenuOpen ? 'إغلاق القائمة' : 'فتح القائمة'}
- relative w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-700 shadow-[0_8px_24px_rgba(0,0,0,0.10)] ring-1 ring-black/5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.14)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+ className="lg:hidden relative w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-700 shadow-[0_8px_24px_rgba(0,0,0,0.10)] ring-1 ring-black/5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.14)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
  >
  {isMenuOpen ? <CloseIcon className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
 
@@ -254,7 +254,7 @@ const Header = () => {
  {isMenuOpen && (
  /* إظهار القوائم فقط في الشاشات الصغيرة */
  <div
- className="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-50 
+ className="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-50 lg:hidden"
  aria-label="قائمة الجوال بالأيقونات"
  >
  <ul className="flex flex-col items-center gap-3">

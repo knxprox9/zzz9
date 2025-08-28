@@ -109,7 +109,7 @@ const ContactPage = () => {
  {/* Contact Info Cards */}
  <section className="py-20">
  <div className="container mx-auto px-4">
- <div className="grid grid-cols-1 gap-8 mb-20">
+ <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-20">
  {contactInfo.map((info, index) => (
  <div
  key={index}
@@ -140,7 +140,7 @@ const ContactPage = () => {
  </div>
 
  {/* Contact Form & Info */}
- <div className="grid grid-cols-1 gap-12">
+ <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
  {/* Contact Form */}
  <div className="bg-white rounded-3xl p-8 shadow-xl" role="form" aria-labelledby="contact-form-title">
  <div className="text-center mb-8">

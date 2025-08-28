@@ -132,9 +132,9 @@ const ColumnsGrid = () => {
  return (
  <div className="py-14" role="navigation" aria-label="روابط التذييل">
  <div className="container mx-auto px-4">
- <div className="grid grid-cols-1 gap-8 text-center">
+ <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 text-center">
  {/* Brand */}
- <div text-center">
+ <div className="lg:col-span-2 text-center">
  <div className="flex items-center gap-3 mb-6 justify-center">
  <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center">
  <span className="text-white font-bold text-xl">أ</span>

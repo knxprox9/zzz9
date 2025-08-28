@@ -106,7 +106,7 @@ const AboutPage = () => {
  <div className="container mx-auto px-4">
  <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-10% 0px' }} variants={stagger} className="max-w-6xl mx-auto">
  <motion.h2 variants={fadeUp} className="text-3xl font-bold text-gray-900 mb-10">هويتنا</motion.h2>
- <div className="grid grid-cols-1 gap-6">
+ <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
  <ValueCard Icon={Sparkles} title="الابتكار" desc="تطوير حلول رقمية ذكية تعكس أحدث التوجهات التقنية." />
  <ValueCard Icon={Rocket} title="الريادة" desc="تعزيز مكانتنا كمنصة الدفع الإلكتروني الأولى في اليمن." />
  <ValueCard Icon={Shield} title="الثقة" desc="ضمان أعلى مستويات الأمان والشفافية في كل خدمة نقدمها." />
@@ -211,7 +211,7 @@ const AboutPage = () => {
  {/* الرؤية المستقبلية + الشراكات */}
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
- <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-10% 0px' }} variants={stagger} className="max-w-6xl mx-auto grid gap-10">
+ <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-10% 0px' }} variants={stagger} className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10">
  <motion.div variants={fadeUp} className="bg-white rounded-2xl p-6 border shadow-sm">
  <IconBubble Icon={Rocket} />
  <h3 className="text-2xl font-bold text-gray-900 mt-4 mb-2">رؤيتنا المستقبلية</h3>

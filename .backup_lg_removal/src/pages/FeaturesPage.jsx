@@ -147,7 +147,7 @@ const FeaturesPage = () => {
  {/* Main Features Grid */}
  <section className="py-20">
  <div className="container mx-auto px-4">
- <div className="grid grid-cols-1 gap-8">
+ <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
  {mainFeatures.map((feature, index) => (
  <div
  key={index}
@@ -184,7 +184,7 @@ const FeaturesPage = () => {
  </p>
  </div>
 
- <div className="grid grid-cols-1 gap-8">
+ <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
  {technicalFeatures.map((category, index) => (
  <div
  key={index}
