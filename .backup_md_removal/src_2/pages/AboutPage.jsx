@@ -83,7 +83,7 @@ const AboutPage = () => {
  <Sparkles className="w-5 h-5 text-yellow-600" />
  <span className="text-sm font-medium text-gray-700">منصة رائدة في الدفع الإلكتروني والخدمات الرقمية</span>
  </motion.div>
- <motion.h1 variants={fadeUp} className="text-4xl font-extrabold text-gray-900 mt-5">
+ <motion.h1 variants={fadeUp} className="text-4xl md:text-5xl font-extrabold text-gray-900 mt-5">
  من نحن
  </motion.h1>
  <motion.p variants={fadeUp} className="text-xl text-gray-700 leading-relaxed mt-5">
@@ -105,8 +105,8 @@ const AboutPage = () => {
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
  <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-10% 0px' }} variants={stagger} className="max-w-6xl mx-auto">
- <motion.h2 variants={fadeUp} className="text-3xl font-bold text-gray-900 mb-10">هويتنا</motion.h2>
- <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+ <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">هويتنا</motion.h2>
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
  <ValueCard Icon={Sparkles} title="الابتكار" desc="تطوير حلول رقمية ذكية تعكس أحدث التوجهات التقنية." />
  <ValueCard Icon={Rocket} title="الريادة" desc="تعزيز مكانتنا كمنصة الدفع الإلكتروني الأولى في اليمن." />
  <ValueCard Icon={Shield} title="الثقة" desc="ضمان أعلى مستويات الأمان والشفافية في كل خدمة نقدمها." />
@@ -120,7 +120,7 @@ const AboutPage = () => {
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
  <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-10% 0px' }} variants={stagger} className="max-w-6xl mx-auto">
- <motion.h2 variants={fadeUp} className="text-3xl font-bold text-gray-900 mb-6">خدماتنا</motion.h2>
+ <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">خدماتنا</motion.h2>
  <motion.p variants={fadeUp} className="text-gray-700 mb-6">نقدم عبر الأسطورة أونلاين مجموعة شاملة من الخدمات الرقمية التي تلبي احتياجات السوق المحلي والإقليمي، وتشمل:</motion.p>
  <motion.ul variants={stagger} className="space-y-3">
  <Bullet>خدمات الاتصالات: دفع الرصيد والباقات والفواتير لكافة شبكات الاتصالات اليمنية.</Bullet>
@@ -132,7 +132,7 @@ const AboutPage = () => {
  </motion.ul>
 
  {/* شريط مزايا مصغّر */}
- <motion.div variants={stagger} className="mt-8 grid grid-cols-2 gap-4">
+ <motion.div variants={stagger} className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
  <ValueCard Icon={Lock} title="أمان متقدم" desc="تشفير ومعايير حماية متعددة الطبقات." />
  <ValueCard Icon={Zap} title="تنفيذ فوري" desc="عمليات سريعة مع تتبع لحظي." />
  <ValueCard Icon={Wallet} title="وسائل دفع متعددة" desc="مرونة في طرق الدفع والدعم." />
@@ -145,7 +145,7 @@ const AboutPage = () => {
  {/* الرؤية والرسالة */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
- <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-10% 0px' }} variants={stagger} className="max-w-6xl mx-auto grid gap-10">
+ <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-10% 0px' }} variants={stagger} className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
  <motion.div variants={fadeUp} className="bg-white rounded-2xl p-6 border shadow-sm">
  <IconBubble Icon={Globe} />
  <h3 className="text-2xl font-bold text-gray-900 mt-4 mb-2">رؤيتنا</h3>
@@ -168,8 +168,8 @@ const AboutPage = () => {
  <section className="py-16 bg-gray-50">
  <div className="container mx-auto px-4">
  <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-10% 0px' }} variants={stagger} className="max-w-6xl mx-auto">
- <motion.h2 variants={fadeUp} className="text-3xl font-bold text-gray-900 mb-6">قيمنا الأساسية</motion.h2>
- <motion.ul variants={stagger} className="grid grid-cols-1 gap-4">
+ <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">قيمنا الأساسية</motion.h2>
+ <motion.ul variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-4">
  <Bullet>الأمان: حماية بيانات ومعاملات العملاء وفق أحدث أنظمة الأمان الرقمي.</Bullet>
  <Bullet>الشفافية: الالتزام بالوضوح والنزاهة في جميع التعاملات.</Bullet>
  <Bullet>الكفاءة: تقديم خدمات ذات جودة عالية وبأعلى درجات الاحترافية.</Bullet>
@@ -184,7 +184,7 @@ const AboutPage = () => {
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
  <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-10% 0px' }} variants={stagger} className="max-w-6xl mx-auto">
- <motion.h2 variants={fadeUp} className="text-3xl font-bold text-gray-900 mb-6">التزامنا</motion.h2>
+ <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">التزامنا</motion.h2>
  <motion.ul variants={stagger} className="space-y-3">
  <Bullet>توفير بيئة رقمية آمنة وموثوقة.</Bullet>
  <Bullet>تقديم أسعار تنافسية دون المساس بجودة الخدمة.</Bullet>
@@ -199,7 +199,7 @@ const AboutPage = () => {
  {/* لماذا نحن */}
  <section className="py-16 bg-white">
  <div className="container mx-auto px-4">
- <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-10% 0px' }} variants={stagger} className="max-w-6xl mx-auto grid gap-6">
+ <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: '-10% 0px' }} variants={stagger} className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
  <ValueCard Icon={Wallet} title="شمولية الخدمات" desc="جميع الحلول الرقمية في تطبيق واحد." />
  <ValueCard Icon={Shield} title="معايير عالمية" desc="جودة عالية وأمان متكامل." />
  <ValueCard Icon={Users} title="سهولة الاستخدام" desc="واجهة بسيطة تناسب جميع الفئات." />

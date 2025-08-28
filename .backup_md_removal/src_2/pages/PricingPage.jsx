@@ -138,7 +138,7 @@ const PricingPage = () => {
  <section className="py-20" style={{backgroundColor: '#FAF8F5'}}>
  <div className="container mx-auto px-4">
  <div className="text-center max-w-4xl mx-auto">
- <h1 className="text-4xl font-bold text-gray-900 mb-6">
+ <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
  باقات <span className="text-yellow-600">الحسابات والاشتراكات</span>
  </h1>
  <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -178,7 +178,7 @@ const PricingPage = () => {
  {/* Pricing Cards */}
  <section className="py-20">
  <div className="container mx-auto px-4">
- <div className="grid grid-cols-1 gap-8">
+ <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
  {pricingPlans.map((plan, index) => (
  <div
  key={index}
@@ -257,7 +257,7 @@ const PricingPage = () => {
  </p>
  </div>
 
- <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
  {addOnServices.map((service, index) => (
  <div
  key={index}

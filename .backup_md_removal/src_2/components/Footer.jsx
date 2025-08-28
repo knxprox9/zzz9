@@ -105,7 +105,7 @@ const TrustBar = () => {
  return (
  <div className="bg-gray-100 py-8" role="region" aria-label="شعارات الثقة والحماية">
  <div className="container mx-auto px-4">
- <div className="grid grid-cols-1 gap-6 text-center">
+ <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
  <div className="flex items-center justify-center gap-3">
  <ShieldCheck className="w-6 h-6 text-green-600" aria-hidden />
  <span className="text-gray-800 font-medium">{trust.badges.find(b => b.key === 'ssl')?.label}</span>
@@ -132,7 +132,7 @@ const ColumnsGrid = () => {
  return (
  <div className="py-14" role="navigation" aria-label="روابط التذييل">
  <div className="container mx-auto px-4">
- <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 text-center">
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 text-center">
  {/* Brand */}
  <div className="lg:col-span-2 text-center">
  <div className="flex items-center gap-3 mb-6 justify-center">

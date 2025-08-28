@@ -48,11 +48,11 @@ const TopBar = () => {
  </a>
  </div>
  <div className="flex items-center gap-6">
- <div className="flex items-center gap-2 gap-1">
+ <div className="flex items-center gap-2 md:gap-2 gap-1">
  <a
  href="tel:+967779995884"
  aria-label="اتصال على +967 77 999 5884"
- className="text-gray-600 hover:text-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 rounded font-semibold cursor-pointer 
+ className="text-gray-600 hover:text-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 rounded font-semibold md:pointer-events-none md:cursor-default cursor-pointer hover:md:text-gray-600"
  dir="ltr"
  style={{ direction: 'ltr', unicodeBidi: 'embed' }}
  onClick={(e) => {
@@ -63,12 +63,12 @@ const TopBar = () => {
  >
  77 999 5884
  </a>
- <Phone className="w-4 h-4 text-gray-600 hidden strokeWidth="2.5" />
- <span className="text-gray-400 mx-1 font-bold">|</span>
+ <Phone className="w-4 h-4 text-gray-600 hidden md:inline" strokeWidth="2.5" />
+ <span className="text-gray-400 mx-1 md:mx-2 font-bold">|</span>
  <a
  href="tel:+967739995884"
  aria-label="اتصال على +967 73 999 5884"
- className="text-gray-600 hover:text-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 rounded font-semibold cursor-pointer 
+ className="text-gray-600 hover:text-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 rounded font-semibold md:pointer-events-none md:cursor-default cursor-pointer hover:md:text-gray-600"
  dir="ltr"
  style={{ direction: 'ltr', unicodeBidi: 'embed' }}
  onClick={(e) => {
@@ -127,12 +127,12 @@ const PromoBanner = () => {
  if (messages.length === 0) return null;
 
  return (
- <div className="bg-gradient-to-r from-yellow-100 to-orange-100 py-1 sm:py-2 overflow-hidden border-b border-yellow-200" 
+ <div className="bg-gradient-to-r from-yellow-100 to-orange-100 py-1 sm:py-2 md:py-3 overflow-hidden border-b border-yellow-200" 
  aria-label="عرض ترويجي" 
  role="banner">
  <div className="text-center px-4 relative">
  <span 
- className={`text-orange-700 font-semibold text-xs sm:text-sm block transition-all duration-300 transform ${
+ className={`text-orange-700 font-semibold text-xs sm:text-sm md:text-base block transition-all duration-300 transform ${
  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
  }`}
  key={currentIndex}
@@ -199,9 +199,9 @@ const Header = () => {
  <div className="w-11 h-11 rounded-full bg-white/90 ring-1 ring-white/50 shadow-sm overflow-hidden flex items-center justify-center -mr-0.5">
  <img src="/images/logo-ostora.png" alt="شعار الأسطورة أونلاين" className="w-9 h-9 object-contain drop-shadow-[0_1px_2px_rgba(0,0,0,0.15)]" />
  </div>
- <div className="-ml-1 
+ <div className="-ml-1 md:ml-0">
  <h1 className="text-xl font-extrabold text-gray-900 font-alarabiya">الأسطورة أونلاين</h1>
- <p className="text-[10px] text-gray-500 font-semibold">لخدمات الدفع الألكتروني</p>
+ <p className="text-[10px] md:text-xs text-gray-500 font-semibold">لخدمات الدفع الألكتروني</p>
  </div>
  </Link>
 
@@ -226,7 +226,7 @@ const Header = () => {
  <div className="flex items-center gap-4 relative" ref={menuBtnWrapperRef}>
  <Link
  to="/services"
- className="hidden bg-yellow-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-yellow-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+ className="hidden md:inline-flex bg-yellow-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-yellow-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
  >
  شحن سريع
  </Link>

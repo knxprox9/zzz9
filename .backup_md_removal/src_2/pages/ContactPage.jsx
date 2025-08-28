@@ -96,7 +96,7 @@ const ContactPage = () => {
  <section className="py-20" style={{backgroundColor: '#FAF8F5'}}>
  <div className="container mx-auto px-4">
  <div className="text-center max-w-4xl mx-auto">
- <h1 className="text-4xl font-bold text-gray-900 mb-6">
+ <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
  <span className="text-yellow-600">تواصل معنا</span> لخدمات الدفع الإلكتروني
  </h1>
  <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -109,7 +109,7 @@ const ContactPage = () => {
  {/* Contact Info Cards */}
  <section className="py-20">
  <div className="container mx-auto px-4">
- <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-20">
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
  {contactInfo.map((info, index) => (
  <div
  key={index}
@@ -158,7 +158,7 @@ const ContactPage = () => {
  </div>
  ) : (
  <form onSubmit={handleSubmit} className="space-y-6" noValidate>
- <div className="grid grid-cols-1 gap-6">
+ <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
  <div>
  <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
  الاسم الكامل *

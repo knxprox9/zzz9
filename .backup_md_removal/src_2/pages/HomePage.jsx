@@ -159,14 +159,14 @@ const HomePage = () => {
  {/* Always two columns, no reordering */}
  <div className="grid grid-cols-2 items-center gap-6">
  {/* Text Content - Right Side */}
- <div className="col-span-1 origin-right scale-25 sm:scale-35 lg:scale-75 xl:scale-100">
+ <div className="col-span-1 origin-right scale-25 sm:scale-35 md:scale-55 lg:scale-75 xl:scale-100">
  <div className="text-center lg:text-right">
  <div className="inline-block bg-yellow-100 text-yellow-800 px-6 py-3 rounded-full text-[6.5rem] sm:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] font-black tracking-tight leading-tight lg:tracking-normal lg:leading-normal mb-6 inline-badge transform origin-center scale-x-110 sm:scale-x-125 lg:scale-x-140 scale-y-[2.2] sm:scale-y-[1.3] lg:scale-y-[1.45]">
  المنصة الرائدة في حلول الدفع الألكتروني في اليمن
  </div>
  {/* مساحة بيضاء فارغة للجوال فقط - تم تقليلها بسبب العنوان الأكبر */}
  <div className="block sm:hidden h-12"></div>
- <p className="hero-subtitle text-[clamp(3.2rem,9.2vw,3.6rem)] lg:text-[1.9rem] text-gray-700 mb-0 sm:mb-8 leading-[clamp(4.1rem,10.5vw,4.6rem)] lg:leading-[2.7rem] font-semibold transform origin-center scale-y-[1.2] sm:scale-y-[1.0]">
+ <p className="hero-subtitle text-[clamp(3.2rem,9.2vw,3.6rem)] md:text-[1.6rem] lg:text-[1.9rem] text-gray-700 mb-0 sm:mb-8 leading-[clamp(4.1rem,10.5vw,4.6rem)] md:leading-[2.35rem] lg:leading-[2.7rem] font-semibold transform origin-center scale-y-[1.2] sm:scale-y-[1.0]">
  نمنحك تجربة دفع وشحن آمنة وسلسة، مصممة لتلبية معاملاتك المالية اليومية بأعلى درجات الكفاءة والموثوقية، بواجهة عصرية وسهلة الاستخدام تجعل التعامل الرقمي أسرع وأكثر متعة. كما نوفر دعماً متكاملاً للعملات الرقمية والبطاقات الإلكترونية المسبقة الدفع، لنضع بين يديك تجربة مبتكرة وموثوقة ترتقي بأسلوبك المالي الرقمي، وتمنحك مستوى جديداً من الراحة والثقة في كل عملية تقوم بها.
  </p>
  {/* زر ابدأ مشروعك الآن فقط في الجوال - تم نقله للأسفل */}
@@ -192,7 +192,7 @@ const HomePage = () => {
  </div>
 
  {/* Phone Mockup - Left Side (fixed position left visually) */}
- <div className="col-span-1 origin-left place-self-start sm:place-self-auto scale-30 sm:scale-35 lg:scale-75 xl:scale-100">
+ <div className="col-span-1 origin-left place-self-start sm:place-self-auto scale-30 sm:scale-35 md:scale-55 lg:scale-75 xl:scale-100">
  <div ref={phoneRef} className="relative mx-auto">
  <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-3xl blur-3xl opacity-20 scale-110" aria-hidden></div>
  <div className="relative z-10 animate-on-scroll" style={{ animationDelay: '0.05s' }}>
@@ -242,7 +242,7 @@ const HomePage = () => {
  </p>
  </div>
 
- <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
  {services.map((service, index) => (
  <div
  key={index}
@@ -278,7 +278,7 @@ const HomePage = () => {
  </p>
  </div>
 
- <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
  {features.map((feature, index) => (
  <div
  key={index}
@@ -306,7 +306,7 @@ const HomePage = () => {
  </p>
  </div>
 
- <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
  {testimonials.map((testimonial, index) => (
  <div
  key={index}
