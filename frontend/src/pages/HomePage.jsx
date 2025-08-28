@@ -160,10 +160,10 @@ const HomePage = () => {
  <div className="grid grid-cols-2 items-center gap-6">
  {/* Text Content - Right Side */}
  <div className="col-span-1 origin-right scale-25 sm:scale-35 xl:scale-100">
- <div className="text-center 
- <div className="inline-block bg-yellow-100 text-yellow-800 px-6 py-3 rounded-full text-[6.5rem] sm:text-[3rem] xl:text-[4rem] font-black tracking-tight leading-tight mb-6 inline-badge transform origin-center scale-x-110 sm:scale-x-125 scale-y-[2.2] sm:scale-y-[1.3] 
- المنصة الرائدة في حلول الدفع الألكتروني في اليمن
- </div>
+ <div className="text-center">
+   <div className="inline-block bg-yellow-100 text-yellow-800 px-6 py-3 rounded-full text-[6.5rem] sm:text-[3rem] font-black tracking-tight leading-tight mb-6 inline-badge transform origin-center scale-x-110 sm:scale-x-125 scale-y-[2.2] sm:scale-y-[1.3]">
+     المنصة الرائدة في حلول الدفع الألكتروني في اليمن
+   </div>
  {/* مساحة بيضاء فارغة للجوال فقط - تم تقليلها بسبب العنوان الأكبر */}
  <div className="block sm:hidden h-12"></div>
  <p className="hero-subtitle text-[clamp(3.2rem,9.2vw,3.6rem)] text-gray-700 mb-0 sm:mb-8 leading-[clamp(4.1rem,10.5vw,4.6rem)] font-semibold transform origin-center scale-y-[1.2] sm:scale-y-[1.0]">
