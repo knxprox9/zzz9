@@ -272,7 +272,7 @@ const TrustMetrics = () => {
  if (loading) {
  return (
  <div className="mt-4 w-full" ref={containerRef}>
- <div className="grid grid-cols-4 gap-2 sm:gap-3 
+ <div className="grid grid-cols-4 gap-2 sm:gap-3">
  {[...Array(4)].map((_, i) => (
  <div key={i} className="h-16 rounded-2xl bg-gray-200" />
  ))}
